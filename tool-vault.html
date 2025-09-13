@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool Vault - AI Student Lab</title>
+    <meta name="description" content="Comprehensive database of AI tools tested and rated by category">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>AI Student Lab</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="lab-notes.html" class="nav-link">Lab Notes</a>
+                <a href="tool-vault.html" class="nav-link active">Tool Vault</a>
+                <a href="study-notes.html" class="nav-link">Study Notes</a>
+                <a href="work-with-me.html" class="nav-link">Work With Me</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Tool Vault</h1>
+            <p class="page-subtitle">Every AI tool I've tested, categorized and rated based on real usage</p>
+            <div class="vault-stats">
+                <div class="stat">
+                    <span class="stat-number">85+</span>
+                    <span class="stat-label">Tools Tested</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">Categories</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">Free Tools</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tool-filters">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="category-filter">Category:</label>
+                    <select id="category-filter">
+                        <option value="all">All Categories</option>
+                        <option value="code">Code Generation</option>
+                        <option value="image">Image Generation</option>
+                        <option value="writing">Content Writing</option>
+                        <option value="video">Video Creation</option>
+                        <option value="audio">Audio & Music</option>
+                        <option value="productivity">Productivity</option>
+                        <option value="research">Research</option>
+                        <option value="social">Social Media</option>
+                        <option value="design">Design</option>
+                        <option value="education">Education</option>
+                        <option value="automation">Automation</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="rating-filter">Min Rating:</label>
+                    <select id="rating-filter">
+                        <option value="0">All Ratings</option>
+                        <option value="4">4+ Stars</option>
+                        <option value="3">3+ Stars</option>
+                        <option value="2">2+ Stars</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="pricing-filter">Pricing:</label>
+                    <select id="pricing-filter">
+                        <option value="all">All Pricing</option>
+                        <option value="free">Free</option>
+                        <option value="freemium">Freemium</option>
+                        <option value="paid">Paid</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tools-table-section">
+        <div class="container">
+            <div class="tools-table-container">
+                <table class="tools-table">
+                    <thead>
+                        <tr>
+                            <th>Tool Name</th>
+                            <th>Category</th>
+                            <th>Rating</th>
+                            <th>Pricing</th>
+                            <th>Best For</th>
+                            <th>Last Tested</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Code Generation Tools -->
+                        <tr class="tool-row" data-category="code" data-rating="5" data-pricing="freemium">
+                            <td class="tool-name">
+                                <div class="tool-info">
+                                    <img src="https://cdn.openai.com/chatgpt/images/chatgpt-logo.png" alt="ChatGPT" class="tool-icon">
+                                    <div>
+                                        <strong>ChatGPT</strong>
+                                        <small>OpenAI</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="category-badge code">Code Generation</span></td>
+                            <td>
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-score">4.8</span>
+                                </div>
+                            </td>
+                            <td><span class="pricing-badge freemium">Freemium</span></td>
+                            <td>General coding, debugging, explanations</td>
+                            <td>Dec 2024</td>
+                            <td>
+                                <a href="#" class="action-btn primary">Try Tool</a>
+                                <a href="#" class="action-btn secondary">Review</a>
+                            </td>
+                        </tr>
+
+                        <tr class="tool-row" data-category="code" data-rating="5" data-pricing="freemium">
+                            <td class="tool-name">
+                                <div class="tool-info">
+                                    <img src="https://www.anthropic.com/images/claude-logo.png" alt="Claude" class="tool-icon">
+                                    <div>
+                                        <strong>Claude</strong>
+                                        <small>Anthropic</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="category-badge code">Code Generation</span></td>
+                            <td>
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-score">4.9</span>
+                                </div>
+                            </td>
+                            <td><span class="pricing-badge freemium">Freemium</span></td>
+                            <td>Complex coding tasks, analysis</td>
+                            <td>Dec 2024</td>
+                            <td>
+                                <a href="#" class="action-btn primary">Try Tool</a>
+                                <a href="#" class="action-btn secondary">Review</a>
+                            </td>
+                        </tr>
+
+                        <tr class="tool-row" data-category="code" data-rating="4" data-pricing="free">
+                            <td class="tool-name">
+                                <div class="tool-info">
+                                    <img src="https://github.githubassets.com/images/modules/site/copilot/copilot.png" alt="GitHub Copilot" class="tool-icon">
+                                    <div>
+                                        <strong>GitHub Copilot</strong>
+                                        <small>GitHub</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="category-badge code">Code Generation</span></td>
+                            <td>
+                                <div class="rating">
+                                    <span class="stars">★★★★☆</span>
+                                    <span class="rating-score">4.2</span>
+                                </div>
+                            </td>
+                            <td><span class="pricing-badge free">Free</span></td>
+                            <td>IDE integration, code completion</td>
+                            <td>Nov 2024</td>
+                            <td>
+                                <a href="#" class="action-btn primary">Try Tool</a>
+                                <a href="#" class="action-btn secondary">Review</a>
+                            </td>
+                        </tr>
+
+                        <!-- Image Generation Tools -->
+                        <tr class="tool-row" data-category="image" data-rating="5" data-pricing="freemium">
+                            <td class="tool-name">
+                                <div class="tool-info">
+                                    <img src="https://cdn.midjourney.com/logo.png" alt="Midjourney" class="tool-icon">
+                                    <div>
+                                        <strong>Midjourney</strong>
+                                        <small>Midjourney</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="category-badge image">Image Generation</span></td>
+                            <td>
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-score">4.7</span>
+                                </div>
+                            </td>
+                            <td><span class="pricing-badge freemium">Freemium</span></td>
+                            <td>Artistic images, concept visualization</td>
+                            <td>Dec 2024</td>
+                            <td>
+                                <a href="#" class="action-btn primary">Try Tool</a>
+                                <a href="#" class="action-btn secondary">Review</a>
+                            </td>
+                        </tr>
+
+                        <tr class="tool-row" data-category="image" data-rating="4" data-pricing="free">
+                            <td class="tool-name">
+                                <div class="tool-info">
+                                    <img src="https://cdn.openai.com/dall-e-3/images/dalle-logo.png" alt="DALL-E" class="tool-icon">
+                                    <div>
+                                        <strong>DALL-E 3</strong>
+                                        <small>OpenAI</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="category-badge image">Image Generation</span></td>
+                            <td>
+                                <div class="rating">
+                                    <span class="stars">★★★★☆</span>
+                                    <span class="rating-score">4.3</span>
+                                </div>
+                            </td>
+                            <td><span class="pricing-badge free">Free</span></td>
+                            <td>Photorealistic images, illustrations</td>
+                            <td>Dec 2024</td>
+                            <td>
+                                <a href="#" class="action-btn primary">Try Tool</a>
+                                <a href="#" class="action-btn secondary">Review</a>
+                            </td>
+                        </tr>
+
+                        <!-- Writing Tools -->
+                        <tr class="tool-row" data-category="writing" data-rating="4" data-pricing="freemium">
+                            <td class="tool-name">
+                                <div class="tool-info">
+                                    <img src="https://copy.ai/images/copy-ai-logo.png" alt="Copy.ai" class="tool-icon">
+                                    <div>
+                                        <strong>Copy.ai</strong>
+                                        <small>Copy.ai</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="category-badge writing">Content Writing</span></td>
+                            <td>
+                                <div class="rating">
+                                    <span class="stars">★★★★☆</span>
+                                    <span class="rating-score">4.1</span>
+                                </div>
+                            </td>
+                            <td><span class="pricing-badge freemium">Freemium</span></td>
+                            <td>Marketing copy, blog posts</td>
+                            <td>Nov 2024</td>
+                            <td>
+                                <a href="#" class="action-btn primary">Try Tool</a>
+                                <a href="#" class="action-btn secondary">Review</a>
+                            </td>
+                        </tr>
+
+                        <tr class="tool-row" data-category="writing" data-rating="4" data-pricing="freemium">
+                            <td class="tool-name">
+                                <div class="tool-info">
+                                    <img src="https://jasper.ai/images/jasper-logo.png" alt="Jasper" class="tool-icon">
+                                    <div>
+                                        <strong>Jasper</strong>
+                                        <small>Jasper</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="category-badge writing">Content Writing</span></td>
+                            <td>
+                                <div class="rating">
+                                    <span class="stars">★★★★☆</span>
+                                    <span class="rating-score">4.0</span>
+                                </div>
+                            </td>
+                            <td><span class="pricing-badge freemium">Freemium</span></td>
+                            <td>Business writing, SEO content</td>
+                            <td>Nov 2024</td>
+                            <td>
+                                <a href="#" class="action-btn primary">Try Tool</a>
+                                <a href="#" class="action-btn secondary">Review</a>
+                            </td>
+                        </tr>
+
+                        <!-- Video Tools -->
+                        <tr class="tool-row" data-category="video" data-rating="3" data-pricing="free">
+                            <td class="tool-name">
+                                <div class="tool-info">
+                                    <img src="https://runwayml.com/images/runway-logo.png" alt="Runway ML" class="tool-icon">
+                                    <div>
+                                        <strong>Runway ML</strong>
+                                        <small>Runway</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="category-badge video">Video Creation</span></td>
+                            <td>
+                                <div class="rating">
+                                    <span class="stars">★★★☆☆</span>
+                                    <span class="rating-score">3.5</span>
+                                </div>
+                            </td>
+                            <td><span class="pricing-badge free">Free</span></td>
+                            <td>Video editing, effects, generation</td>
+                            <td>Oct 2024</td>
+                            <td>
+                                <a href="#" class="action-btn primary">Try Tool</a>
+                                <a href="#" class="action-btn secondary">Review</a>
+                            </td>
+                        </tr>
+
+                        <!-- Productivity Tools -->
+                        <tr class="tool-row" data-category="productivity" data-rating="5" data-pricing="free">
+                            <td class="tool-name">
+                                <div class="tool-info">
+                                    <img src="https://notion.com/images/notion-logo.png" alt="Notion AI" class="tool-icon">
+                                    <div>
+                                        <strong>Notion AI</strong>
+                                        <small>Notion</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="category-badge productivity">Productivity</span></td>
+                            <td>
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-score">4.6</span>
+                                </div>
+                            </td>
+                            <td><span class="pricing-badge free">Free</span></td>
+                            <td>Note-taking, organization, writing</td>
+                            <td>Dec 2024</td>
+                            <td>
+                                <a href="#" class="action-btn primary">Try Tool</a>
+                                <a href="#" class="action-btn secondary">Review</a>
+                            </td>
+                        </tr>
+
+                        <tr class="tool-row" data-category="productivity" data-rating="4" data-pricing="free">
+                            <td class="tool-name">
+                                <div class="tool-info">
+                                    <img src="https://todoist.com/images/todoist-logo.png" alt="Todoist" class="tool-icon">
+                                    <div>
+                                        <strong>Todoist</strong>
+                                        <small>Doist</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="category-badge productivity">Productivity</span></td>
+                            <td>
+                                <div class="rating">
+                                    <span class="stars">★★★★☆</span>
+                                    <span class="rating-score">4.4</span>
+                                </div>
+                            </td>
+                            <td><span class="pricing-badge free">Free</span></td>
+                            <td>Task management, AI assistance</td>
+                            <td>Nov 2024</td>
+                            <td>
+                                <a href="#" class="action-btn primary">Try Tool</a>
+                                <a href="#" class="action-btn secondary">Review</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="tool-categories-overview">
+        <div class="container">
+            <h2 class="section-title">Tools by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Code Generation</h3>
+                    <p>12 tools tested</p>
+                    <div class="category-rating">
+                        <span class="stars">★★★★★</span>
+                        <span>Avg: 4.6</span>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Image Generation</h3>
+                    <p>8 tools tested</p>
+                    <div class="category-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span>Avg: 4.3</span>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-pen"></i>
+                    </div>
+                    <h3>Content Writing</h3>
+                    <p>15 tools tested</p>
+                    <div class="category-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span>Avg: 4.1</span>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Creation</h3>
+                    <p>6 tools tested</p>
+                    <div class="category-rating">
+                        <span class="stars">★★★☆☆</span>
+                        <span>Avg: 3.2</span>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Audio & Music</h3>
+                    <p>5 tools tested</p>
+                    <div class="category-rating">
+                        <span class="stars">★★★☆☆</span>
+                        <span>Avg: 3.4</span>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Productivity</h3>
+                    <p>18 tools tested</p>
+                    <div class="category-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span>Avg: 4.2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI Student Lab</h3>
+                    <p>Real AI learning, real failures, real growth.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="lab-notes.html">Lab Notes</a></li>
+                        <li><a href="study-notes.html">Study Notes</a></li>
+                        <li><a href="work-with-me.html">Work With Me</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Tool Categories</h4>
+                    <ul>
+                        <li><a href="#">Code Generation</a></li>
+                        <li><a href="#">Image Creation</a></li>
+                        <li><a href="#">Content Writing</a></li>
+                        <li><a href="#">Productivity</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Student Lab. Learning AI, one experiment at a time.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="tool-vault.js"></script>
+</body>
+</html>

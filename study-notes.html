@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Notes - AI Student Lab</title>
+    <meta name="description" content="Visual study notes and learning materials transformed into carousel galleries">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>AI Student Lab</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="lab-notes.html" class="nav-link">Lab Notes</a>
+                <a href="tool-vault.html" class="nav-link">Tool Vault</a>
+                <a href="study-notes.html" class="nav-link active">Study Notes</a>
+                <a href="work-with-me.html" class="nav-link">Work With Me</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Study Notes</h1>
+            <p class="page-subtitle">My handwritten notes transformed into beautiful, shareable carousels</p>
+            <div class="study-stats">
+                <div class="stat">
+                    <span class="stat-number">45+</span>
+                    <span class="stat-label">Note Sets</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">Topics</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">Downloads</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="notes-categories">
+        <div class="container">
+            <div class="categories-tabs">
+                <button class="tab-btn active" data-category="all">All Notes</button>
+                <button class="tab-btn" data-category="machine-learning">Machine Learning</button>
+                <button class="tab-btn" data-category="neural-networks">Neural Networks</button>
+                <button class="tab-btn" data-category="prompt-engineering">Prompt Engineering</button>
+                <button class="tab-btn" data-category="computer-vision">Computer Vision</button>
+                <button class="tab-btn" data-category="nlp">NLP</button>
+                <button class="tab-btn" data-category="ethics">AI Ethics</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="notes-gallery">
+        <div class="container">
+            <div class="notes-grid" id="notes-container">
+                <!-- Machine Learning Notes -->
+                <div class="note-card" data-category="machine-learning">
+                    <div class="note-carousel">
+                        <div class="carousel-container">
+                            <div class="carousel-slides">
+                                <div class="slide active">
+                                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=800&fit=crop" alt="ML Fundamentals Page 1">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">1/5</span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=600&h=800&fit=crop" alt="ML Fundamentals Page 2">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">2/5</span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=800&fit=crop" alt="ML Fundamentals Page 3">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">3/5</span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600&h=800&fit=crop" alt="ML Fundamentals Page 4">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">4/5</span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=800&fit=crop" alt="ML Fundamentals Page 5">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">5/5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+                            <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="note-info">
+                        <h3>Machine Learning Fundamentals</h3>
+                        <p>Complete notes from Andrew Ng's ML course covering supervised/unsupervised learning, cost functions, and gradient descent.</p>
+                        <div class="note-meta">
+                            <span class="note-date"><i class="fas fa-calendar"></i> Dec 10, 2024</span>
+                            <span class="note-pages"><i class="fas fa-file-alt"></i> 5 pages</span>
+                            <span class="note-downloads"><i class="fas fa-download"></i> 234 downloads</span>
+                        </div>
+                        <div class="note-actions">
+                            <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
+                            <a href="#" class="preview-btn"><i class="fas fa-eye"></i> Preview</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="note-card" data-category="neural-networks">
+                    <div class="note-carousel">
+                        <div class="carousel-container">
+                            <div class="carousel-slides">
+                                <div class="slide active">
+                                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=800&fit=crop" alt="Neural Networks Page 1">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">1/6</span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=800&fit=crop" alt="Neural Networks Page 2">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">2/6</span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=600&h=800&fit=crop" alt="Neural Networks Page 3">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">3/6</span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=800&fit=crop" alt="Neural Networks Page 4">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">4/6</span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600&h=800&fit=crop" alt="Neural Networks Page 5">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">5/6</span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=800&fit=crop" alt="Neural Networks Page 6">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">6/6</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+                            <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="note-info">
+                        <h3>Neural Networks Deep Dive</h3>
+                        <p>From perceptrons to transformers - my complete neural network architecture notes with mathematical derivations.</p>
+                        <div class="note-meta">
+                            <span class="note-date"><i class="fas fa-calendar"></i> Dec 8, 2024</span>
+                            <span class="note-pages"><i class="fas fa-file-alt"></i> 6 pages</span>
+                            <span class="note-downloads"><i class="fas fa-download"></i> 189 downloads</span>
+                        </div>
+                        <div class="note-actions">
+                            <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
+                            <a href="#" class="preview-btn"><i class="fas fa-eye"></i> Preview</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="note-card" data-category="prompt-engineering">
+                    <div class="note-carousel">
+                        <div class="carousel-container">
+                            <div class="carousel-slides">
+                                <div class="slide active">
+                                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&h=800&fit=crop" alt="Prompt Engineering Page 1">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">1/4</span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=600&h=800&fit=crop" alt="Prompt Engineering Page 2">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">2/4</span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=800&fit=crop" alt="Prompt Engineering Page 3">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">3/4</span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600&h=800&fit=crop" alt="Prompt Engineering Page 4">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">4/4</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+                            <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="note-info">
+                        <h3>Prompt Engineering Masterclass</h3>
+                        <p>Advanced prompting techniques, chain-of-thought, few-shot learning, and real-world examples that actually work.</p>
+                        <div class="note-meta">
+                            <span class="note-date"><i class="fas fa-calendar"></i> Dec 5, 2024</span>
+                            <span class="note-pages"><i class="fas fa-file-alt"></i> 4 pages</span>
+                            <span class="note-downloads"><i class="fas fa-download"></i> 312 downloads</span>
+                        </div>
+                        <div class="note-actions">
+                            <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
+                            <a href="#" class="preview-btn"><i class="fas fa-eye"></i> Preview</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="note-card" data-category="computer-vision">
+                    <div class="note-carousel">
+                        <div class="carousel-container">
+                            <div class="carousel-slides">
+                                <div class="slide active">
+                                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=800&fit=crop" alt="Computer Vision Page 1">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">1/5</span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=800&fit=crop" alt="Computer Vision Page 2">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">2/5</span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=600&h=800&fit=crop" alt="Computer Vision Page 3">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">3/5</span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=800&fit=crop" alt="Computer Vision Page 4">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">4/5</span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600&h=800&fit=crop" alt="Computer Vision Page 5">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">5/5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+                            <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="note-info">
+                        <h3>Computer Vision Algorithms</h3>
+                        <p>CNNs, object detection, image segmentation, and transfer learning - complete with architecture diagrams.</p>
+                        <div class="note-meta">
+                            <span class="note-date"><i class="fas fa-calendar"></i> Dec 3, 2024</span>
+                            <span class="note-pages"><i class="fas fa-file-alt"></i> 5 pages</span>
+                            <span class="note-downloads"><i class="fas fa-download"></i> 267 downloads</span>
+                        </div>
+                        <div class="note-actions">
+                            <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
+                            <a href="#" class="preview-btn"><i class="fas fa-eye"></i> Preview</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="note-card" data-category="nlp">
+                    <div class="note-carousel">
+                        <div class="carousel-container">
+                            <div class="carousel-slides">
+                                <div class="slide active">
+                                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&h=800&fit=crop" alt="NLP Page 1">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">1/4</span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=800&fit=crop" alt="NLP Page 2">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">2/4</span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=800&fit=crop" alt="NLP Page 3">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">3/4</span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=600&h=800&fit=crop" alt="NLP Page 4">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">4/4</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+                            <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="note-info">
+                        <h3>Natural Language Processing</h3>
+                        <p>Tokenization, embeddings, transformers, BERT, GPT - with practical implementation examples.</p>
+                        <div class="note-meta">
+                            <span class="note-date"><i class="fas fa-calendar"></i> Dec 1, 2024</span>
+                            <span class="note-pages"><i class="fas fa-file-alt"></i> 4 pages</span>
+                            <span class="note-downloads"><i class="fas fa-download"></i> 198 downloads</span>
+                        </div>
+                        <div class="note-actions">
+                            <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
+                            <a href="#" class="preview-btn"><i class="fas fa-eye"></i> Preview</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="note-card" data-category="ethics">
+                    <div class="note-carousel">
+                        <div class="carousel-container">
+                            <div class="carousel-slides">
+                                <div class="slide active">
+                                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=800&fit=crop" alt="AI Ethics Page 1">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">1/3</span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600&h=800&fit=crop" alt="AI Ethics Page 2">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">2/3</span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=800&fit=crop" alt="AI Ethics Page 3">
+                                    <div class="slide-overlay">
+                                        <span class="slide-number">3/3</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+                            <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="note-info">
+                        <h3>AI Ethics & Responsible AI</h3>
+                        <p>Bias, fairness, transparency, accountability - essential considerations for ethical AI development.</p>
+                        <div class="note-meta">
+                            <span class="note-date"><i class="fas fa-calendar"></i> Nov 28, 2024</span>
+                            <span class="note-pages"><i class="fas fa-file-alt"></i> 3 pages</span>
+                            <span class="note-downloads"><i class="fas fa-download"></i> 145 downloads</span>
+                        </div>
+                        <div class="note-actions">
+                            <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
+                            <a href="#" class="preview-btn"><i class="fas fa-eye"></i> Preview</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="download-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Download All Study Notes</h2>
+                <p>Get access to my complete collection of 45+ study note sets covering machine learning, AI ethics, and more.</p>
+                <div class="cta-features">
+                    <div class="feature">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>High-quality PDFs</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-palette"></i>
+                        <span>Beautiful formatting</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-sync"></i>
+                        <span>Regular updates</span>
+                    </div>
+                </div>
+                <a href="#" class="cta-btn">Download Complete Collection <i class="fas fa-download"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI Student Lab</h3>
+                    <p>Real AI learning, real failures, real growth.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="lab-notes.html">Lab Notes</a></li>
+                        <li><a href="tool-vault.html">Tool Vault</a></li>
+                        <li><a href="work-with-me.html">Work With Me</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Study Topics</h4>
+                    <ul>
+                        <li><a href="#">Machine Learning</a></li>
+                        <li><a href="#">Neural Networks</a></li>
+                        <li><a href="#">Prompt Engineering</a></li>
+                        <li><a href="#">AI Ethics</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Student Lab. Learning AI, one experiment at a time.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="study-notes.js"></script>
+</body>
+</html>

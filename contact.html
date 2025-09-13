@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - AI Student Lab</title>
+    <meta name="description" content="Get in touch for collaborations, questions, or just to chat about AI learning">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>AI Student Lab</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="lab-notes.html" class="nav-link">Lab Notes</a>
+                <a href="tool-vault.html" class="nav-link">Tool Vault</a>
+                <a href="study-notes.html" class="nav-link">Study Notes</a>
+                <a href="work-with-me.html" class="nav-link">Work With Me</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Get In Touch</h1>
+            <p class="page-subtitle">Questions about AI tools, collaboration ideas, or just want to chat about machine learning? I'd love to hear from you!</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Let's Connect</h2>
+                    <p>I'm always excited to connect with fellow AI enthusiasts, discuss collaboration opportunities, or help answer questions about AI tools and learning.</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Email</h3>
+                                <p>hello@aistudentlab.com</p>
+                                <small>Response within 24 hours</small>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Instagram DM</h3>
+                                <p>@aistudentlab</p>
+                                <small>Best for quick questions</small>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-discord"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Discord Community</h3>
+                                <p>Join our learning community</p>
+                                <small>500+ AI learners</small>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>YouTube</h3>
+                                <p>AI Student Lab</p>
+                                <small>Weekly experiments</small>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-tiktok"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>TikTok</h3>
+                                <p>@aistudentlab</p>
+                                <small>Quick AI tips</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="availability">
+                        <h3>Current Availability</h3>
+                        <div class="availability-status">
+                            <div class="status-indicator available"></div>
+                            <span>Available for collaborations</span>
+                        </div>
+                        <p>I'm currently accepting:</p>
+                        <ul>
+                            <li>✅ UGC demo video projects</li>
+                            <li>✅ Sponsored experiment series</li>
+                            <li>✅ Educational workshop bookings</li>
+                            <li>✅ Discord AMA sessions</li>
+                            <li>✅ Tool review partnerships</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form action="#" method="post" id="contact-form">
+                        <h3>Send a Message</h3>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name *</label>
+                                <input type="text" id="first-name" name="first-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name *</label>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email">Email *</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="collaboration">Collaboration Opportunity</option>
+                                <option value="question">AI Tool Question</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="bug">Report an Issue</option>
+                                <option value="partnership">Partnership Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company/Organization</label>
+                            <input type="text" id="company" name="company" placeholder="Optional">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell me what's on your mind..." required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" checked>
+                                <span class="checkmark"></span>
+                                Subscribe to my AI learning newsletter
+                            </label>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+
+                    <div class="form-success" id="form-success" style="display: none;">
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Message Sent!</h3>
+                        <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
+                        <button class="success-btn" onclick="resetForm()">Send Another Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How do you choose which AI tools to review?</h3>
+                    <p>I focus on tools that are either free/freemium, have significant user bases, or represent important developments in AI. I prioritize tools that students and beginners can actually access and benefit from.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do you accept paid promotions?</h3>
+                    <p>Yes, but only for tools and services that I genuinely believe provide value to my audience. I maintain complete editorial control and always disclose sponsorships transparently.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How can I suggest an AI tool for review?</h3>
+                    <p>Feel free to send me suggestions through the contact form above or via DM on Instagram. I love discovering new tools from my community!</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I repost your content?</h3>
+                    <p>Please reach out first! I'm happy to collaborate on cross-promotion and often create custom content for partnerships.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do you offer 1-on-1 AI tutoring?</h3>
+                    <p>Currently, I focus on creating educational content for broader audiences, but I'm always open to discussing group workshops or custom educational projects.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How often do you post new content?</h3>
+                    <p>I aim for 3-4 posts per week across platforms, plus weekly detailed experiment write-ups on the Lab Notes section.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-proof">
+        <div class="container">
+            <h2 class="section-title">Join Our Learning Community</h2>
+            <div class="social-stats">
+                <div class="stat">
+                    <div class="stat-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <span class="stat-number">12.5K+</span>
+                    <span class="stat-label">Instagram Followers</span>
+                </div>
+                <div class="stat">
+                    <div class="stat-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <span class="stat-number">8.2K+</span>
+                    <span class="stat-label">YouTube Subscribers</span>
+                </div>
+                <div class="stat">
+                    <div class="stat-icon">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Discord Members</span>
+                </div>
+                <div class="stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">Active Learners</span>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link-large">
+                    <i class="fab fa-instagram"></i>
+                    <span>Follow on Instagram</span>
+                </a>
+                <a href="#" class="social-link-large">
+                    <i class="fab fa-discord"></i>
+                    <span>Join Discord</span>
+                </a>
+                <a href="#" class="social-link-large">
+                    <i class="fab fa-youtube"></i>
+                    <span>Subscribe on YouTube</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI Student Lab</h3>
+                    <p>Real AI learning, real failures, real growth.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="lab-notes.html">Lab Notes</a></li>
+                        <li><a href="tool-vault.html">Tool Vault</a></li>
+                        <li><a href="study-notes.html">Study Notes</a></li>
+                        <li><a href="work-with-me.html">Work With Me</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Free AI Tools</a></li>
+                        <li><a href="#">Learning Resources</a></li>
+                        <li><a href="#">Experiment Templates</a></li>
+                        <li><a href="#">Community Guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Student Lab. Learning AI, one experiment at a time.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
